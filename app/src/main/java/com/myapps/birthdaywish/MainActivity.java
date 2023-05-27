@@ -2,27 +2,35 @@ package com.myapps.birthdaywish;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.myapps.birthdaywish.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button next;
-    TextView text;
+    //View Binding
+    ActivityMainBinding binding;
+    String input;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        next.findViewById(R.id.next);
-        text.findViewById(R.id.text);
+        //next = findViewById(R.id.next);
+        //text = findViewById(R.id.text);
 
-        next.setOnClickListener(new View.OnClickListener() {
+        binding.next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText("hello pavi");
+                input = binding.nameInput.getText().toString();
+                Intent intent = new Intent(MainActivity.this,WishingScreen.class);
+                intent.putExtra("Name",input);
+                startActivity(intent);
             }
         });
     }

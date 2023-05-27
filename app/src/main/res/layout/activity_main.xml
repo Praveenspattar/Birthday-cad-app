@@ -37,14 +37,12 @@
             android:id="@+id/nameInput"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/border"
             android:layout_marginTop="25dp"
+            android:background="@drawable/border"
             android:hint="Praveen Pattar"
             android:padding="12dp"
             android:textColorHint="@color/white"
-            android:fontFamily=""
-            android:textSize="18sp"
-            />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/next"
