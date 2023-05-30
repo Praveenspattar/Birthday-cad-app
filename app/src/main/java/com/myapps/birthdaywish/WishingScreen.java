@@ -8,12 +8,12 @@ import com.myapps.birthdaywish.databinding.ActivityWishingScreenBinding;
 public class WishingScreen extends AppCompatActivity {
 
     //View Binding
-    ActivityWishingScreenBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityWishingScreenBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+
+        setContentView(R.layout.activity_wishing_screen);
     }
 }
