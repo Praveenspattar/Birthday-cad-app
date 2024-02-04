@@ -56,7 +56,7 @@ public class WishingScreen extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_STREAM,uri);
 
         //adding the message of happy birthday
-        intent.putExtra(Intent.EXTRA_SUBJECT,"Happy Birthday and many many Happy returns of the day");
+        intent.putExtra(Intent.EXTRA_SUBJECT,"Happy Birthday!!");
 
         //setting type of image
         intent.setType("image/png");

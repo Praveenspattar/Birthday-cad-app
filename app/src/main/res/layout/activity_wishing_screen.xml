@@ -10,45 +10,46 @@
 
   <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/finalImage"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      app:layout_constraintStart_toStartOf="parent"
+      android:layout_width="310dp"
+      android:layout_height="487dp"
+      android:layout_marginTop="46dp"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      android:layout_marginTop="46dp">
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
     <ImageView
         android:id="@+id/birthdaybackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/birth"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/sprinkles"
-        app:layout_constraintTop_toTopOf="@+id/birthdaybackground"
+        app:layout_constraintEnd_toEndOf="@+id/birthdaybackground"
         app:layout_constraintStart_toStartOf="@+id/birthdaybackground"
-        app:layout_constraintEnd_toEndOf="@+id/birthdaybackground"/>
+        app:layout_constraintTop_toTopOf="@+id/birthdaybackground" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Praveen"
-        android:background="@drawable/button"
-        android:textAlignment="center"
-        android:textSize="32sp"
-        android:fontFamily="@font/poppins_bold"
-        android:textColor="@color/text_primary"
         android:layout_marginBottom="78dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_bold"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
-        app:layout_constraintStart_toStartOf="@+id/birthdaybackground"
+        android:text="Praveen"
+        android:textAlignment="center"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="@+id/birthdaybackground"
-        app:layout_constraintEnd_toEndOf="@+id/birthdaybackground"/>
+        app:layout_constraintEnd_toEndOf="@+id/birthdaybackground"
+        app:layout_constraintStart_toStartOf="@+id/birthdaybackground" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
